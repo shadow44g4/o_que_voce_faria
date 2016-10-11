@@ -105,7 +105,7 @@ public class Oqvf_oficial {
                                             System.out.println("Neste momento você foge do local");  
                                          break;
                                      case 2:
-                                         System.out.println(" Volta pra ajudar");
+                                         System.out.println(" Volta pra ajudar, pq o bagulho é loco");
                                          break;
                                  }
                                       
