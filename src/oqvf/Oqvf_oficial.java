@@ -39,7 +39,7 @@ public class Oqvf_oficial {
             switch(opcao){
                 case 1:
 //                    CRIANDO O PERSONAGEM
-                      dado fase1 = new dado(); 
+                     
                     System.out.println("=================CRIANDO PERSONAGEM=================================================");
                     System.out.print("Para começarmos o jogo, preciso saber o seu nome: ");
                     nome = input.next();
