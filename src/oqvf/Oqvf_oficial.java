@@ -121,13 +121,16 @@ public class Oqvf_oficial {
                                          int acordaHospital = (int)(Math.random()*10);
                                          if(acordaHospital == 0 || acordaHospital == 2 || acordaHospital == 4 || acordaHospital == 7 || acordaHospital == 9){
                                              System.out.println("Em seguida você percebe que está sem um braço, porém sua saúde está razoávelmente bem");
-                                             
+                                             nome = nome + " Cotoco";
+                                             Boolean braco = false; //Para usar depois para verificar se o cara tem braco
                                              
                                          }else{
                                              System.out.println("Você levanta e busca uma saída daquele local. Você enxerga uma luz a poucos metros e anda");
                                              System.out.println("em direção à ela. Quando estás prestes a sair, você vê uma estranha criatura devorando um cavalo");
                                              System.out.println("poucos metros de você. Você se espanta e acaba chamando a atenção da criatura.");
+                                             
                                          }
+                                         
                                         break;
                                     case 3:
                                             System.out.println("================================================================");
