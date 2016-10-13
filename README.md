@@ -4,4 +4,4 @@ Um jogo de decisão aonde você decide o final do jogo!
 
 ---------------------
 Description:
-A decision game that you choose the end!
+A decision game where you decide the end!
