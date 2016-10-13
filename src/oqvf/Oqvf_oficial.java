@@ -1,3 +1,4 @@
+﻿
 package oqvf;
 
 import java.util.Scanner;
@@ -10,6 +11,7 @@ public class Oqvf_oficial {
     }
     
   static  void Menu(){
+      //Dado classe = new Dado();
       boolean menuRodando = true;
       String nome;
       int idade;
@@ -181,6 +183,11 @@ public class Oqvf_oficial {
                     }
                     break;
                 case 3:
+                    menuRodando = false;
+                    break;
+                    
+                case 4:
+                    //classe.dadinho();
                     menuRodando = false;
                     break;
             }
