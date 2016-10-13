@@ -1,22 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package oqvf;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Thiagx
- */
+
 public class Oqvf_oficial {
    
     public static void main(String[] args) {
         Menu();
     }
-    //Teste helio
+    
   static  void Menu(){
       boolean menuRodando = true;
       String nome;
@@ -31,6 +23,7 @@ public class Oqvf_oficial {
             System.out.println("(1) - INICIAR JOGO");
             System.out.println("(2) - CRÉDITOS");
             System.out.println("(3) - SAIR");
+            System.out.println("(4) - Dado da sorte");
             int opcao = input.nextInt();
             boolean creditos = true;
             boolean jogoRodando = true;
@@ -170,6 +163,7 @@ public class Oqvf_oficial {
                     System.out.println("                                         Rotas de decisão");
                     System.out.println("Jogo desenvolvido no Instituto Federal Farroupilha - Campus São Vicente do Sul.");
                     System.out.println("Desenvolvedores: Gabriel Martin, Thiago Oliveira, Hélio Barcelos, Alexandre Pereira");
+                    System.out.println("Voluntarios: ");
                     System.out.println("Todos os direitos reservados");
                     System.out.println("================================================================");
                         System.out.println("(1) - VOLTAR ");

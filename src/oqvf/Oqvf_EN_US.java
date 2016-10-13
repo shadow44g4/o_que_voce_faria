@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Thiagx
  */
-public class Oqvf_oficial {
+public class Oqvf_EN_US {
    
     public static void main(String[] args) {
         Menu();
