@@ -1,0 +1,17 @@
+.data # Declaração variaveis(Segmento de dados)
+v: .word # Declaração vetor (palavra)
+.text 
+
+li  $t1,1 #inicio do vetor valendo 1 
+li  $t2,10 # tamanho do vetor
+li  $t3,0 # Valor ínicio do vetor
+la  $t4,v #endereço da memória de v
+
+loop:  # Laço 
+  sw   $t1,0 ($t4)  # Store grava memória
+  addi $t4, $t4,4 # incremento palavra de 4 em 4
+  addi $t3, $t3,1 # incremento 1 em 1
+  bne  $t2, $t3, loop #comparação senão for igual, laço
+  
+
+

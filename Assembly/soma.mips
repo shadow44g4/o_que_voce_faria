@@ -1,0 +1,36 @@
+.data
+	Numero1: .asciiz "Informe o primerio numero: "
+	#String Numero1 referencia a frase na tabela asciiz a ser chamado  
+	Numero2: .asciiz "Informe o segundo numero: "
+	
+	Resultado: .asciiz "Resultado da soma: "
+.text
+	li $v0,4 #representa o comando para print String
+	la $a0,Numero1 # chama a variavel Numero1 
+	syscall 
+	
+	li $v0,5
+	syscall 
+	
+	move $t0,$v0
+	
+	li $v0,4
+	la $a0,Numero2
+	syscall 
+	
+	li $v0,5
+	syscall 
+	move $t1,$v0 # move o $v0 para $t1
+	#tenho dois valores em $t0 e $t1, so preciso fazer a soma
+	
+	add $t2,$t1,$t0 #$t2 registrou a soma 
+	
+	li $v0,4
+	la $a0,Resultado
+	syscall
+	
+	li $v0,1 #print um int (no caso registrador $t2)
+	move $a0,$t2 # move o $t2 para $a0
+	syscall 
+	
+	
