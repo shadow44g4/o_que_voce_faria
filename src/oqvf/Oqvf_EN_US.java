@@ -23,14 +23,14 @@ public class Oqvf_EN_US {
       int idade;
       Scanner input = new Scanner(System.in);
         while(menuRodando){
-            System.out.println("##----ROTAS DE DECISÃO ----##");
+            System.out.println("##----DECISION ROUTES ----##");
             System.out.println("");
             System.out.println("========================================================================================");
-            System.out.println("Olá, bem vindo ao jogo de decisões. Nessa jornada, você irá fazer diversas escolhas"
-                    + " que mudará totalmente seu rumo.");
-            System.out.println("(1) - INICIAR JOGO");
-            System.out.println("(2) - CRÉDITOS");
-            System.out.println("(3) - SAIR");
+            System.out.println("Hello, welcome to the game decisions. In this journey, you will make several choices "
+                     + "They will totally change its course.");
+            System.out.println("(1) - START GAME");
+            System.out.println("(2) - CREDITS");
+            System.out.println("(3) - GET OUT");
             int opcao = input.nextInt();
             boolean creditos = true;
             boolean jogoRodando = true;
@@ -40,33 +40,33 @@ public class Oqvf_EN_US {
                 case 1:
 //                    CRIANDO O PERSONAGEM
                      
-                    System.out.println("=================CRIANDO PERSONAGEM=================================================");
-                    System.out.print("Para começarmos o jogo, preciso saber o seu nome: ");
+                    System.out.println("=================CREATING CHARACTER=================================================");
+                    System.out.print("To start the game, I need to know your name: ");
                     nome = input.next();
-                    System.out.print(nome +", que nome bacana! Agora me diga sua idade: ");
+                    System.out.print(nome +", what a cool name! Now tell me your age: ");
                     idade = input.nextInt();
-                    System.out.println("Muito Obrigado, agora temos os dados necessários para começarmos nossa aventura...");
-                    System.out.println("No decorrer do jogo eu irei mostrar para você suas escolhas, para que possa tomar suas desições.");
-                    System.out.println("Está preparado? Então vamos nessa!");
+                    System.out.println("Thank you, we now have the data needed to begin our adventure...");
+                    System.out.println("During the game I will show you all your choices, so you can take your decisions.");
+                    System.out.println("Are you ready? So let's go!");
                     System.out.println("=========#==========#==============#===========#=============#============#============");
                     
                     if(idade >= 18){
 //                        Primeira parte
-                        System.out.println("Muito bem," + nome + ". Você está indo a uma festa com seus amigos "
-                                + "\n " +"depois de uma 'briga de escolhas', onde a festa ganhou, porém chegaram "
-                                + "\n " +"na conclusão de que você iria conduzir. A festa foi muito divertida, todos"
-                                + "\n " +"curtiram demais. Nesse momento você e seus amigos estão voltando pra casa."
-                                +"\n " + "De repente, um caminhão surge na contra-mão e bem no exato momento um carro"
-                                +"\n " + "tenta ultrapassa-lo. Nesse carro há uma família, junto a um bebê. O que você faz ?");
-                                 System.out.println("============== decisão ============================================");
-                                System.out.println("(1) - Jogar o carro para a esquerda e matar a família, fazendo você perder"
-                                        +"\n " + " 7 pontos de vida psicológico, porém continua com o carro e com os amigos.");
-                                System.out.println("(2) - Colide com o caminhão, fazendo com que, todos seus amigos"
-                                        +"\n " + "morram, menos você, você simplesmente perde 5 pontos de sua vida e 5 pontos"
-                                        +"\n " + "do seu psicológico.");
-                                System.out.println("(3) - Joga o carro para o lado direito e evita uma tragédia, porém você perde"
-                                        +"\n " + "apenas o carro. Não utilizará mais veículo durante a aventura.");
-                                System.out.print("Opção: ");
+                        System.out.println("Very well, "+ name +". You are going to a party with your friends "
+                                 + "\n" + "after a 'fight' choices, where the party won, but they concluded"
+                                 + "\n" + "that you would drive. The party was so much fun, everyone"
+                                 + "\n" + "ejoyed a lot. At that time you and your friends are coming home."
+                                 + "\n" + "Suddenly, a truck comes up the wrong way and right at the very moment a car"
+                                 + "\n" + "try to pass you on the road. In that car there is a family with a baby. What do you do?");
+                                 System.out.println("============== decision ============================================");
+                                System.out.println("(1) - Conduct the car to the left and kill the family, making you lose"
+                                        +"\n " + " 7 points of psychological life, but still with the car and with your friends.");
+                                System.out.println("(2) - Collides with truck, making all your friends"
+                                        +"\n " + "die, but not you, you just lose 5 points of your life and 5 points"
+                                        +"\n " + "of your psychological.");
+                                System.out.println("(3) - Conduct the car to the right and avoid a tragedy, but you lose"
+                                        +"\n " + "only the car. So you can not use the vehicle during the adventure anymore.");
+                                System.out.print("Option: ");
                                 int op1 = input.nextInt();
                                 
                               
@@ -74,21 +74,21 @@ public class Oqvf_EN_US {
                                     case 1:
 //                                        Segunda parte
                                         System.out.println("================================================================");
-                                System.out.println("Logo após o acidente, você acorda do desmaio e percebe que todos seus amigos"
-                                                +"\n " + "fugiram e deixou você sozinho no local. Você olha pra sua esquerda e vê os carros em chama,"
-                                                +"\n " + "e a família em estado grave gritando por ajuda. presos nas ferragens e nas labaredas."
-                                                +"\n " + "Você tem 2 opções, ao escolher você jogará o dado...Caso o dado caia no 4,5,6 você conseguirá"
-                                                +"\n " + "executar a escolha, senão ele automaticamente jogará para a outra decisão,  boa sorte. ");
-                                        System.out.println("============== decisão ============================================");
-                                System.out.println("(1) - Sair correndo do local, porque a policia está a caminho e você se"
-                                        +"\n " + "desesperou. Caso faça isso, seu psicológico abaixará 2 pontos.");
-                                 System.out.println("(2) - Prestar ajuda a família, fazendo com que você ganhe 2 pontos de psicológico.");
+                                System.out.println("Soon after the accident, you wake up from fainting and realize that all your friends"
+                                                +"\n " + "ran away and leave you alone on site. You look to your left and see the cars in flames,"
+                                                +"\n " + "and family seriously screaming for help. trapped in the wreckage and on the flames."
+                                                +"\n " + "You have 2 options to choose you throw the dice ... If the dice fall in 4,5,6 you can"
+                                                +"\n " + "perform the choice, otherwise it will automatically play for another decision, good luck. ");
+                                        System.out.println("============== decision ============================================");
+                                System.out.println("(1) - Rush out of place because the police are on the way and you"
+                                        +"\n " + "despaired yourself. If you do, your psychological download 2 points.");
+                                 System.out.println("(2) - Assist the family, making you get 2 psychological points.");
                                  int op1a = input.nextInt();
                                  int dado = (int)(Math.random()*6);
                                  if(dado == 0){
                                      dado = 6;
                                  }
-                                        System.out.println("=======O DADO CAIU EM: " + dado + "===========");
+                                        System.out.println("=======THE DICE FALL IN: " + dado + "===========");
                                  
                                  if(!(dado == 4 || dado == 5|| dado == 6 )){
                                      if(op1a == 1){
@@ -102,10 +102,10 @@ public class Oqvf_EN_US {
                                  switch(op1a){
                                      case 1:
                                           System.out.println("================================================================");
-                                            System.out.println("Neste momento você foge do local");  
+                                            System.out.println("At this point you run away from the place");  
                                          break;
                                      case 2:
-                                         System.out.println(" Volta pra ajudar, pq o bagulho é loco");
+                                         System.out.println("Back to help, because things are crazy!");
                                          break;
                                  }
                                       
@@ -114,47 +114,47 @@ public class Oqvf_EN_US {
                                         break;
                                     case 2:
                                          System.out.println("================================================================");
-                                         System.out.println("Você fica paralizado e acaba colidindo o carro contra o caminhão. Com isso, todos seus");
-                                         System.out.println("amigos morrem e sobrevive apenas você. Seu psicológico cai 5 pontos e sua vida também.");
-                                         System.out.println("Você acorda  dentro de um hospital, ele parece estar abandonado. Não há ninguém dentro ");
-                                         System.out.println("dele. .");
+                                         System.out.println("You get paralyzed and end up crashing the car into the truck. With this, all your");
+                                         System.out.println("die and you are the only surviver. Your psychological drops 5 points and your life too.");
+                                         System.out.println("You wake up in a hospital, it looks abandoned. There is no one inside ");
+                                         System.out.println("it. .");
                                          int acordaHospital = (int)(Math.random()*10);
                                          if(acordaHospital == 0 || acordaHospital == 2 || acordaHospital == 4 || acordaHospital == 7 || acordaHospital == 9){
-                                             System.out.println("Em seguida você percebe que está sem um braço, porém sua saúde está razoávelmente bem");
+                                             System.out.println("Then you realize you're missing an arm, but your health is reasonably good");
                                              nome = nome + " Cotoco";
                                              Boolean braco = false; //Para usar depois para verificar se o cara tem braco
                                              
                                          }else{
-                                             System.out.println("Você levanta e busca uma saída daquele local. Você enxerga uma luz a poucos metros e anda");
-                                             System.out.println("em direção à ela. Quando estás prestes a sair, você vê uma estranha criatura devorando um cavalo");
-                                             System.out.println("poucos metros de você. Você se espanta e acaba chamando a atenção da criatura.");
+                                             System.out.println("You raise and seeks a way out of that location. Do you see a light at a few meters and walk");
+                                             System.out.println("toward it. When you are about to leave, you see a strange creature devouring a horse");
+                                             System.out.println("few meters from you. Do you wonder yourself and ends up calling the creature's attention.");
                                              
                                          }
                                          
                                         break;
                                     case 3:
                                             System.out.println("================================================================");
-                                            System.out.println("Você conduz o seu carro para o lado direito e evita uma tragédia. Porém isso fez com que seu carro");
-                                            System.out.println("caisse dentro de um rio, onde vocês conseguiram sair e ficaram seguros. Vocês perderam o carro.");
-                                            System.out.println("Você e sua turma estão agora em uma estrada, em busca de ajuda para sair daquele local, ");
-                                            System.out.println("escuro e sem ninguém. Uma longa caminhada vocês avistam um posto abandonado. O que ");
-                                            System.out.println("Você faz?");
-                                            System.out.println("(1) - Você entra no posto para achar ajuda.");
-                                            System.out.println("(2) - continua andando em busca de ajuda, pois achou 'sombrio' demais.");
-                                            System.out.print("Opção: ");
+                                            System.out.println("You drive your car to the right and avoid a tragedy. But that made your car");
+                                            System.out.println("fall into a river, where did you get out and were safe. You just lost the car.");
+                                            System.out.println("You and your gang are now on a road, in search of help to get out of that place, ");
+                                            System.out.println("dark and no one. In a long walk you spot a deserted station. What ");
+                                            System.out.println("do you do?");
+                                            System.out.println("(1) - You enter the station to find help.");
+                                            System.out.println("(2) - keep walking for help because you think it's too 'gloomy'.");
+                                            System.out.print("Option: ");
                                             int postoGasolinaAbandonado = input.nextInt();
                                             switch(postoGasolinaAbandonado){
                                                 case 1:
-                                                    System.out.println("Olá, meu amigo");
+                                                    System.out.println("Hello, my friend");
                                                     break;
                                                 case 2:
-                                                    System.out.println(" Outro teste basicao");
+                                                    System.out.println(" Another basic test");
                                                     break;
                                             }
                                             break;
                                 }
                     }else{
-                        System.out.println("Você é de menor? O que está fazendo aqui? VÁ ESTUDAR!!!");
+                        System.out.println("You're underage? What are you doing here? GO STUDY!!!");
                         System.out.println("----------------GAME OVER----------------");
                         menuRodando = false;
                     }
@@ -167,14 +167,14 @@ public class Oqvf_EN_US {
 //                    MUDANDO A TELA PARA OS CRÉDITOS
                     while(creditos){
                     System.out.println("================================================================");
-                    System.out.println("                                         Rotas de decisão");
-                    System.out.println("Jogo desenvolvido no Instituto Federal Farroupilha - Campus São Vicente do Sul.");
-                    System.out.println("Desenvolvedores: Gabriel Martin, Thiago Oliveira, Hélio Barcelos, Alexandre Pereira");
-                    System.out.println("Todos os direitos reservados");
+                    System.out.println("                                         Decision routes");
+                    System.out.println("Game developed in Instituto Federal Farroupilha - Campus São Vicente do Sul.");
+                    System.out.println("Developers: Gabriel Martin, Thiago Oliveira, Hélio Barcelos, Alexandre Pereira");
+                    System.out.println("All rights reserved");
                     System.out.println("================================================================");
-                        System.out.println("(1) - VOLTAR ");
-                        System.out.println("(2) - SAIR");
-                        System.out.print("Opção: ");
+                        System.out.println("(1) - BACK ");
+                        System.out.println("(2) - EXIT");
+                        System.out.print("Option: ");
                         int opcaoCredito = input.nextInt();
                         if(opcaoCredito == 1){
                             creditos = false;
