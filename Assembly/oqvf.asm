@@ -7,7 +7,10 @@ op1: .asciiz "(1) - INICIAR JOGO\n"
 op2: "(2) - CREDITOS\n"
 op3: "(3) - SAIR\n"
 resp: "Opção: " #Local aonde o usuario vai colocar a resposta(pode ser usado mais de uma vez)
-texto1: "case 1"
+caminhao: "Muito bem. Você está voltando de uma festa com seus amigos, de carro. Tu estás conduzindo e logo a frente um caminhão vem \n em sua direção. Neste momento um carro tenta ultrapassa-lo. Dentro do carro há uma família. O que você faz? \n (1) - Jogar o carro para a esquerda e matar a família, porém você e seus amigos sobrevivem. \n (2) - (2) - Colide com o caminhão, fazendo com que, todos seus amigos morram, menos você. \n (3) - Joga o carro para o lado direito e evita uma tragédia, porém você perdeapenas o carro. Não utilizará mais veículo durante a aventura."
+escolha1: "Logo após o acidente, você acorda do desmaio e percebe que todos seus amigos fugiram e deixou você sozinho no local. Você olha \n pra sua esquerda e vê os carros em chama, e a família em estado grave gritando por ajuda. presos nas \n ferragens e nas labaredas. Você tem 2 opções,Boa escolha. \n ==================================================== decisão ================================================================== \n (1)- Sair correndo do local, porque a policia está a caminho e você se desesperou \n (2) - Prestar ajuda a família \n"                                 
+escolha1A: "Neste momento você se caga de medo e foge do local..."
+escolha1B: "A sua consciência pesa o suficiente para você voltar para o local."
 texto2: "case 2"
 
 .text ## nem sei o que faz mas eu boto mesmo assim
@@ -52,8 +55,19 @@ le_inteiro_do_teclado:
 		jr $ra		# volta para o lugar de onde foi chamado (no caso, jal le_inteiro_do_teclado)
 
 case1:	li $v0, 4
-	la $a0, texto1
+	la $a0, escolha1
 	syscall 
+	
+	li $v0, 4
+	la $a0, resp
+	syscall 
+	
+	jal le_inteiro_do_teclado  # chama função para ler
+la  $t7, 0($v0)		   # carrega o inteiro lido em $t7
+
+beq $t7,1,escolha1A
+beq $t7,2,escolha1B
+	
 	jr $ra
 	
 case2:	li $v0, 4
