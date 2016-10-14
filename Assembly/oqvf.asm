@@ -112,13 +112,13 @@ cas3:
 morreu:	li $v0, 4
 	la $a0, morreutext
 	syscall
-	jr $ra 
+	
 	li $v0, 10 # finaliza a parada
 	syscall
 	
 fugir:  li $v0, 4
 	la $a0, fugirtext
 	syscall 	
-	jr $ra
+	
 	li $v0, 10 # finaliza a parada
 	syscall
