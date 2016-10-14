@@ -39,7 +39,7 @@ public class Oqvf_oficial {
             switch(opcao){
                 case 1:
 //                    CRIANDO O PERSONAGEM
-                      dado fase1 = new dado(); 
+                      
                     System.out.println("=================CRIANDO PERSONAGEM=================================================");
                     System.out.print("Para começarmos o jogo, preciso saber o seu nome: ");
                     nome = input.next();
@@ -100,18 +100,67 @@ public class Oqvf_oficial {
                                  
                                  System.out.println(" op1a: " + op1a);
                                  switch(op1a){
+                                     //----------------------------------------------------------------------------------foge do local---------------------------------------------------------------------
                                      case 1:
                                           System.out.println("================================================================");
-                                            System.out.println("Neste momento você foge do local");  
-                                         break;
+                                            System.out.println("Neste momento você foge do local...");  
+                                            System.out.println("A policia averigou o local do crime. Você acabou fugindo como preocurado. Com todo o");
+                                            System.out.println("acontecido, você vai para casa pensar no que fazerer.Escolha uma decisão:");
+                                            System.out.println("(1) - Ficar preso em casa até abaixar a poeira.");
+                                            System.out.println("(2) - Sair em busca dos seus amigos.");
+                                            System.out.println("(3) - Se entregar para a polícia.");
+//                                           opção de escolha entre comprar passagem x continuar local
+                                            int op2 = input.nextInt();
+                                            switch(op2){
+//                                                -------------------------------preso em casa---------------------
+                                                case 1:
+                                                        System.out.println ("Você está muito mal. Seu psicológico esta decaindo 3 pontos, isso lhe deixa tenso.");
+                                                        System.out.println("O desespero aumenta quando você vê a sua foto e as de seus amigos na televisão.");
+                                                        System.out.println("Você olha para o telefone, o que você faz...");
+                                                        System.out.println("(1) - Liga para 1 de seus amigos.");
+                                                        System.out.println("(2) - Liga para 1 parente e conta o ocorrido.");
+                                                        System.out.println("(3) - Não faz nada...");
+//                                                        OPÇÃO DE ESCOLHA  liga amigo x liga parente
+                                                        int op3 = input.nextInt();
+                                                        switch(op3){
+                                                            case 1:
+                                                                    System.out.println("=============================================================");
+                                                                    System.out.println("Você liga para Jonh. Ele conta que está escondido dentro de uma casa abandonada,");
+                                                                    System.out.println("pois estava sendo perseguido junto com os amigos. Cada amigo foi para 1 lado.");
+                                                                    System.out.println("Ele pede para que você vá buscar ele. Caso vá, ele lhe dará uma comissão.");
+                                                                    System.out.println("Você vai buscar ele por $50 dólares?");
+                                                                    System.out.println("(1) - Sim");
+                                                                    System.out.println("(2) - Não");
+                                                                    int op3a = input.nextInt();
+                                                                    switch(op3a){
+//                                                                   SIM
+                                                                        case 1:
+                                                                            System.out.println("=========================================================================");
+                                                                    System.out.println("Você pega o carro da sua mãe e vai até o local combinado por Jonh. Ele não está no local.");
+                                                                       break;
+                                                                        case 2:
+//                                                                    NAO
+                                                                            System.out.println("=====================================================================");
+                                                                    System.out.println("Você diz que a rua está cheia de policiais e desliga o telefone...Seu psicológico cai...");
+                                                                    break;
+                                                                    }
+                                                            
+                                                            case 2:
+//                                     - ----------------------------------Liga para um parente------------------------------------------
+                                                                System.out.println("==============================================================================");
+                                                                break;
+                                                        }
+                                                case 2:
+                                                    break;
+                                            }
+ //                   -----------------------------------------------------fim foge local-----------------------------------------------------
+//----------------------------------------volta para ajudar-----------------------------------------------------------------
                                      case 2:
-                                         System.out.println(" Volta pra ajudar, pq o bagulho é loco");
+                                         System.out.println(" Sua consciência pesa, o suficiente para você voltar no local. Você está retornando...");
+                                         System.out.println("Ao chegar no local, a imagem é forte. Os corpos estão ");
                                          break;
                                  }
-                                      
-                              
-                                  
-                                        break;
+//----------------------------------------------fim volta para ajudar---------------------------------------------------------
                                     case 2:
                                          System.out.println("================================================================");
                                          System.out.println("Você fica paralizado e acaba colidindo o carro contra o caminhão. Com isso, todos seus");
