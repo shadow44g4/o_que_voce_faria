@@ -1,6 +1,6 @@
 # O que você faria? (What you do?)
 Descrição:
-Um jogo de decisão aonde você decide o final do jogo!
+Um jogo em Assembly de decisão onde você decide o final do jogo!
 
 ---------------------
 Description:
